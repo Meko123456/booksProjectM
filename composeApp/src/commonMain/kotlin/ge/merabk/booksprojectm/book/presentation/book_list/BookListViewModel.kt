@@ -20,7 +20,9 @@ class BookListViewModel : ViewModel() {
             }
 
             is BookListAction.OnBookClick -> {
-
+                _state.update {
+                    it.copy(searchResults = listOf(action.book))
+                }
             }
 
             is BookListAction.OnTabSelected -> {
