@@ -1,4 +1,4 @@
-package ge.merabk.booksprojectm.book.presentation.book_list
+package ge.merabk.booksprojectm.book.presentation.booklist
 
 import ge.merabk.booksprojectm.book.domain.model.Book
 

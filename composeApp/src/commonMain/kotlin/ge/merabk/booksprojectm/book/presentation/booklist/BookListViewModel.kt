@@ -1,4 +1,4 @@
-package ge.merabk.booksprojectm.book.presentation.book_list
+package ge.merabk.booksprojectm.book.presentation.booklist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

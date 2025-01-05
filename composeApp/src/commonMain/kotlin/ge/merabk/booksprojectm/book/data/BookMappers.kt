@@ -4,7 +4,7 @@ import ge.merabk.booksprojectm.book.data.dto.BookDto
 import ge.merabk.booksprojectm.book.domain.model.Book
 
 
-fun BookDto.toBook(): Book {
+internal fun BookDto.toBook(): Book {
     return Book(
         id = id.substringAfterLast("/"),
         title = title,

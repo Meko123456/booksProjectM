@@ -1,4 +1,4 @@
-package ge.merabk.booksprojectm.book.presentation.book_list.components
+package ge.merabk.booksprojectm.book.presentation.booklist.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background

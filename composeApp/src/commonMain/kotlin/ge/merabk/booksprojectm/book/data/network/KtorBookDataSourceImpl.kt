@@ -1,5 +1,6 @@
 package ge.merabk.booksprojectm.book.data.network
 
+import ge.merabk.booksprojectm.book.data.dto.BookWorkDto
 import ge.merabk.booksprojectm.book.data.dto.SearchResponseDto
 import ge.merabk.booksprojectm.core.data.safeCall
 import ge.merabk.booksprojectm.core.domain.DataError
@@ -8,7 +9,7 @@ import io.ktor.client.HttpClient
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
 
-class KtorBookDataSourceImpl(
+internal class KtorBookDataSourceImpl(
     private val httpClient: HttpClient
 ) : BookDataSource {
 
@@ -32,13 +33,13 @@ class KtorBookDataSourceImpl(
 
     }
 
-    //    override suspend fun getBookDetails(bookWorkId: String): Result<BookWorkDto, DataError.Remote> {
-//        return safeCall<BookWorkDto> {
-//            httpClient.get(
-//                urlString = "$BASE_URL/works/$bookWorkId.json"
-//            )
-//        }
-//    }
+    override suspend fun getBookDetails(bookWorkId: String): BooksResult<BookWorkDto, DataError.Remote> =
+        safeCall<BookWorkDto> {
+            httpClient.get(
+                urlString = "$BASE_URL/works/$bookWorkId.json"
+            )
+        }
+
     companion object {
         private const val BASE_URL = "https://openlibrary.org"
     }

@@ -6,14 +6,12 @@ import ge.merabk.booksprojectm.book.domain.usecase.SearchBooksUseCase
 import ge.merabk.booksprojectm.core.domain.BooksResult
 import ge.merabk.booksprojectm.core.domain.DataError
 
-class SearchBooksUseCaseImpl(
+internal class SearchBooksUseCaseImpl(
     private val booksRepository: BooksRepository
 ) : SearchBooksUseCase {
     override suspend fun invoke(
         query: String,
         resultLimit: Int?
-    ): BooksResult<List<Book>, DataError.Remote> {
-        return booksRepository.searchBooks(query, resultLimit)
-    }
+    ): BooksResult<List<Book>, DataError.Remote> = booksRepository.searchBooks(query, resultLimit)
 }
 

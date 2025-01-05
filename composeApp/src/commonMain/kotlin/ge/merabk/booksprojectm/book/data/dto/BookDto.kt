@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-data class BookDto(
+internal data class BookDto(
     @SerialName("key") val id: String,
     @SerialName("title") val title: String,
     @SerialName("language") val languages: List<String>? = null,

@@ -10,5 +10,5 @@ interface BooksRepository {
         resultLimit: Int? = null
     ): BooksResult<List<Book>, DataError.Remote>
 
-//    suspend fun getBookDetails(bookWorkId: String): Result<BookWorkDto, DataError.Remote>
+    suspend fun getBookDetails(bookWorkId: String): BooksResult<String, DataError.Remote>
 }

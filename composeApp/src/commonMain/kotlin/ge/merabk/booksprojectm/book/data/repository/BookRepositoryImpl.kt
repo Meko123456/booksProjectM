@@ -8,7 +8,7 @@ import ge.merabk.booksprojectm.core.domain.BooksResult
 import ge.merabk.booksprojectm.core.domain.DataError
 import ge.merabk.booksprojectm.core.domain.map
 
-class BooksRepositoryImpl(
+internal class BooksRepositoryImpl(
     private val bookDataSource: BookDataSource
 ) : BooksRepository {
     override suspend fun searchBooks(
@@ -17,6 +17,11 @@ class BooksRepositoryImpl(
     ): BooksResult<List<Book>, DataError.Remote> =
         bookDataSource.searchBooks(query, resultLimit).map {
             it.results.map { bookDto -> bookDto.toBook() }
+        }
+
+    override suspend fun getBookDetails(bookWorkId: String): BooksResult<String, DataError.Remote> =
+        bookDataSource.getBookDetails(bookWorkId).map {
+            it.description.toString()
         }
 
 }

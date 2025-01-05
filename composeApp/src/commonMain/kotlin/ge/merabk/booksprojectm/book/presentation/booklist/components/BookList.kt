@@ -1,4 +1,4 @@
-package ge.merabk.booksprojectm.book.presentation.book_list.components
+package ge.merabk.booksprojectm.book.presentation.booklist.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.padding

@@ -1,4 +1,4 @@
-package ge.merabk.booksprojectm.book.presentation.book_list
+package ge.merabk.booksprojectm.book.presentation.booklist
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -38,8 +38,8 @@ import booksprojectm.composeapp.generated.resources.no_favorites
 import booksprojectm.composeapp.generated.resources.no_search_results
 import booksprojectm.composeapp.generated.resources.search_results
 import ge.merabk.booksprojectm.book.domain.model.Book
-import ge.merabk.booksprojectm.book.presentation.book_list.components.BookList
-import ge.merabk.booksprojectm.book.presentation.book_list.components.BookSearchBar
+import ge.merabk.booksprojectm.book.presentation.booklist.components.BookList
+import ge.merabk.booksprojectm.book.presentation.booklist.components.BookSearchBar
 import ge.merabk.booksprojectm.core.presentation.DarkBlue
 import ge.merabk.booksprojectm.core.presentation.DesertWhite
 import ge.merabk.booksprojectm.core.presentation.SandYellow
