@@ -5,13 +5,13 @@ import ge.merabk.booksprojectm.core.presentation.UiText
 
 data class BookListState(
     val searchQuery: String = "Kotlin",
-    val isLoading: Boolean = false,
-    val searchResults: List<Book> = books,
+    val isLoading: Boolean = true,
+    val searchResults: List<Book> = emptyList(),
     val favoriteBooks: List<Book> = emptyList(),
     val error: UiText? = null,
     val selectedTabIndex: Int = 0
 )
-
+/*
 // todo dummy data
 private val books = (1..100).map {
     Book(
@@ -27,4 +27,4 @@ private val books = (1..100).map {
         numPages = 100,
         numEditions = 1,
     )
-}
+}*/
