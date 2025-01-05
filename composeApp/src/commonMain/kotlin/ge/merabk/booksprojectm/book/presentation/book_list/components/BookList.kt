@@ -1,7 +1,6 @@
 package ge.merabk.booksprojectm.book.presentation.book_list.components
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
@@ -29,14 +28,12 @@ fun BookList(
     ) {
         items(
             items = books,
-            key = {
-                it.id
-            }) { book ->
+            key = { it.id }
+        ) { book ->
             BookListItem(
                 book = book,
-                modifier = modifier
+                modifier = Modifier
                     .widthIn(max = 700.dp)
-                    .fillMaxWidth()
                     .padding(horizontal = 16.dp),
                 onBookClick = {
                     onBookClick(book)

@@ -6,8 +6,25 @@ import ge.merabk.booksprojectm.core.presentation.UiText
 data class BookListState(
     val searchQuery: String = "Kotlin",
     val isLoading: Boolean = false,
-    val searchResults: List<Book> = emptyList(),
+    val searchResults: List<Book> = books,
     val favoriteBooks: List<Book> = emptyList(),
     val error: UiText? = null,
     val selectedTabIndex: Int = 0
 )
+
+// todo dummy data
+private val books = (1..100).map {
+    Book(
+        id = it.toString(),
+        title = "Book $it",
+        imageUrl = "qwdsaczx",
+        authors = listOf("meraba"),
+        description = "TODO()",
+        languages = listOf("TODO()"),
+        firstPublishedYear = "TODO()",
+        averageRating = 54.3,
+        ratingCount = 3,
+        numPages = 100,
+        numEditions = 1,
+    )
+}
