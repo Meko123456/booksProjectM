@@ -37,7 +37,7 @@ import booksprojectm.composeapp.generated.resources.favorites
 import booksprojectm.composeapp.generated.resources.no_favorites
 import booksprojectm.composeapp.generated.resources.no_search_results
 import booksprojectm.composeapp.generated.resources.search_results
-import ge.merabk.booksprojectm.book.domain.Book
+import ge.merabk.booksprojectm.book.domain.model.Book
 import ge.merabk.booksprojectm.book.presentation.book_list.components.BookList
 import ge.merabk.booksprojectm.book.presentation.book_list.components.BookSearchBar
 import ge.merabk.booksprojectm.core.presentation.DarkBlue

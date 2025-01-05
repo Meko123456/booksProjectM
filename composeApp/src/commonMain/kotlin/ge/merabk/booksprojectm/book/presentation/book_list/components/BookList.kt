@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import ge.merabk.booksprojectm.book.domain.Book
+import ge.merabk.booksprojectm.book.domain.model.Book
 
 @Composable
 fun BookList(

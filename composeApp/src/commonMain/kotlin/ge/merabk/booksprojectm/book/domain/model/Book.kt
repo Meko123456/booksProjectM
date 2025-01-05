@@ -1,4 +1,4 @@
-package ge.merabk.booksprojectm.book.domain
+package ge.merabk.booksprojectm.book.domain.model
 
 data class Book(
     val id: String,

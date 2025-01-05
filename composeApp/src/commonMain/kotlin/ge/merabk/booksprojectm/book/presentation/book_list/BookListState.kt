@@ -1,6 +1,6 @@
 package ge.merabk.booksprojectm.book.presentation.book_list
 
-import ge.merabk.booksprojectm.book.domain.Book
+import ge.merabk.booksprojectm.book.domain.model.Book
 import ge.merabk.booksprojectm.core.presentation.UiText
 
 data class BookListState(

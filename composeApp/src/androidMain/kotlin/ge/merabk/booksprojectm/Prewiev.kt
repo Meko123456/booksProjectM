@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import ge.merabk.booksprojectm.book.domain.Book
+import ge.merabk.booksprojectm.book.domain.model.Book
 import ge.merabk.booksprojectm.book.presentation.book_list.BookListScreen
 import ge.merabk.booksprojectm.book.presentation.book_list.BookListState
 import ge.merabk.booksprojectm.book.presentation.book_list.components.BookList
