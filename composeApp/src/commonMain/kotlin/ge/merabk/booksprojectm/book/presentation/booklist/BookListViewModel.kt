@@ -103,11 +103,7 @@ class BookListViewModel(
                 }
             }
 
-            is BookListAction.OnBookClick -> {
-                _state.update {
-                    it.copy(searchResults = listOf(action.book))
-                }
-            }
+            is BookListAction.OnBookClick -> Unit
 
             is BookListAction.OnTabSelected -> {
                 _state.update {

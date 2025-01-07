@@ -9,6 +9,7 @@ import ge.merabk.booksprojectm.book.domain.repository.BooksRepository
 import ge.merabk.booksprojectm.book.domain.usecase.GetBookDetailsUseCase
 import ge.merabk.booksprojectm.book.domain.usecase.SearchBooksUseCase
 import ge.merabk.booksprojectm.book.presentation.SelectedBookViewModel
+import ge.merabk.booksprojectm.book.presentation.bookdetails.BookDetailViewModel
 import ge.merabk.booksprojectm.book.presentation.booklist.BookListViewModel
 import ge.merabk.booksprojectm.core.data.HttpClientFactory
 import org.koin.core.module.Module
@@ -35,5 +36,6 @@ val sharedModule = module {
     // ViewModel registration
     viewModel { BookListViewModel(get()) }
     viewModel { SelectedBookViewModel() }
+    viewModel { BookDetailViewModel(get(), get()) }
 
 }
